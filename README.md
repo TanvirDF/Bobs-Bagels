@@ -33,3 +33,15 @@ I’d like to see the price of each item before I add it to my basket.
 As a member of the public,
 So that I can prepare to pay
 When I go to checkout I'd like to know the total sum of the bagels in my basket
+
+Domain Models:
+
+Object: Bagel
+Properties: bagelPrice, bagelID
+Messages: Return(price)
+Output: Number, Number
+
+Object: Basket
+Properties: itemList@Array[@item], capacity(@number)
+Messages: addItem(@item), removeItem(@item), isBasketfull(), checkitemID(), isExists(), totalPrice()
+Output: String, string, boolean, boolean, boolean, number
